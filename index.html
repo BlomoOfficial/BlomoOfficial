@@ -27,6 +27,21 @@
         cursor: pointer;
         border: none;
       }
+
+      .video-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+      }
+
+      .video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
     </style>
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
@@ -39,7 +54,9 @@
         <p style="font-size: 24px; margin: 8px;" class="lead">Aitor Moya Muñoz</p>
         <p style="font-size: 16px;" class="lead">Sound Engineer, Producer, Film / Videogame Music & Sound Designer</p>
         <div class="fact position-relative overflow-hidden p-3 text-center">
-          <video controls="" style="border-style: solid; border-color: rgba(255, 255, 255, 0.5); border-width: 2px; width: 1024px; max-width: 100%;" src="./showreel.mp4"></video>
+          <div class="video-container">
+            <iframe class="video" src="https://www.youtube.com/embed/i_05MCaxO0A" allowfullscreen></iframe>
+          </div>
         </div>
         <p class="lead">
           <a href="./aitor_moya_munoz_cv.pdf" class="btn btn-lg btn-secondary">CV</a>
